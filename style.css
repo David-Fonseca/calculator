@@ -1,0 +1,82 @@
+body, html{
+    margin:0;
+    background-color: grey;
+    display: flex;
+    flex: auto;
+    justify-content: center;
+    
+    align-items: center;
+
+}
+
+#calculator{
+    margin-top: 8%;
+    display:flex;
+    flex-direction: column;
+    width: 300px;
+    height: 500px;
+    border:grey;
+    background-color: black;
+    border-radius: 8%;
+    align-items: center;
+}
+
+#screen{
+    width:auto;
+    height:auto;
+    background-color:aliceblue;
+    margin-top:10%;
+    width: 80%;
+    height:18%;
+    border-radius: 8%;
+    text-align: right;
+    font-size: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    overflow: hidden;
+    align-items: center;
+}
+
+.operators{
+    display: flex;
+    flex-direction: column;
+}
+.actions{
+    display: flex;
+    flex-wrap: wrap;
+}
+.operators, .actions{
+    gap:6px;
+}
+.clear, .del{
+    width:85px;
+}
+#buttons{
+    display: flex;
+    flex-direction: row;
+    margin: 8%;
+}
+
+button{
+    width: 55px;
+    height: 55px;
+    background-color: black;
+    color:grey;
+    border-radius: 5%;
+    border-style: ridge;
+
+
+}
+button:hover{
+    color:rgb(128, 4, 211);
+    border-color: rgb(128, 4, 211);
+}
+.actions .clear:hover,.del:hover{
+    color: red;
+    border-color: red;
+}
+.operators button:hover, .actions {
+    color:rgb(187, 255, 78);
+    border-color:rgb(187, 255, 78)
+}
